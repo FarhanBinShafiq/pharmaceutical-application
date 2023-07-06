@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+          <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <title> BADAS </title>
+
+    </head>
+
+    <body>
+
+        <!--sub menu-->
+
+        <div class="container margin padding w100">
+            
+            <div class="row">
+            
+                <div class="col-sm-2 pr0" style=" width: 15%;">    
+            
+                    <div class="menu">
+                    
+                        <div class="side-bar">
+                        
+                            <img class="logo" src="images/badas.png" id="sidebar-logo">
+                            <h4 class="textstyle">BADAS</h4>
+
+                            <div class="item top"><a href="#"><i class="fas fa-gauge"></i>Dashboard</a></div>
+
+                            <div class="item">
+                            
+                                <a class="sub-btn"><i class="fas fa-briefcase-medical"></i>Inventory<i class="fas fa-angle-right dropdown"></i></a>
+
+                                <div class="sub-menu">
+
+                                    <div class="item"><a href="dashboard_sales.html"><i class=""></i>Sales</a></div>
+                                
+                                    <a class="sub-btn"><i class=""></i>Requisition<i class="fas fa-angle-right dropdown"></i></a>
+                                    
+                                    <div class="sub-menu">
+                                        <a href="requisition_purchase.html" class="sub-item purchasereq1"
+                                            id="purchasereq1">Purchase Requisition</a>
+                                        <a href="requisition_stocktransfer.html" class="sub-item stocktransferreq1"
+                                            id="stocktransferreq1">Stock Transfer Requisition</a>
+                                            <a href="requisition_purchase_rejected.html" class="sub-item stocktransferreq1"
+                                            id="stocktransferreq1"> Reject Purchase Requisition</a>    
+                                    </div>
+                                    <a class="sub-btn"><i class=""></i>Procurement<i class="fas fa-angle-right dropdown"></i></a>
+                                        
+                                        <div class="sub-menu disnone">
+                                            <a href="procurement_order.html" class="sub-item">Order</a>
+                                            <a href="procurement_purchase.html" class="sub-item">Purchase</a>
+                                            <a href="procurement_transfer.html" class="sub-item">Transfer</a>
+                                            <a href="procurement_adjustment.html" class="sub-item">Adjustment</a>
+                                        </div>
+                                    
+                                    <a class="sub-btn"><i class=""></i>Report<i class="fas fa-angle-right dropdown"></i></a>
+                                    
+                                    <div class="sub-menu disnone">
+                                        <a href="report_stockreport.html" class="sub-item">Stock Report</a>
+                                        <a href="report_stockvaluesum.html" class="sub-item">Stock Value Summary</a>
+                                        <a href="report_cashflowsum.html" class="sub-item">Cash Flow Summary</a>
+                                        <a href="report_salessum.html" class="sub-item">Sales Summary Report</a>
+                                        <a href="report_employeewisesales.html" class="sub-item">Employee Wise Sales</a>
+                                        <a href="#" class="sub-item">Sales Vat Report</a>
+                                        <a href="#" class="sub-item">Purchase Order Report</a>
+                                        <a href="#" class="sub-item">Purchase Summary Report</a>
+                                        <a href="#" class="sub-item">Sale Purchase Stock Summary</a>
+                                        <a href="#" class="sub-item">Product Purchase Summary</a>
+                                        <a href="#" class="sub-item">Product IO</a>
+                                        <a href="#" class="sub-item">Product Stock Summary</a>
+                                        <a href="#" class="sub-item">Summary Report</a>
+                                        <a href="#" class="sub-item">Product Short List</a>
+                                    </div>
+
+                                    <div class="item"><a href="#"><i class=""></i>Suppliers</a></div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+
+                                <a class="sub-btn"><i class="fas fa-money-bill-1"></i>Accounts<i class="fas fa-angle-right dropdown"></i></a>
+                        
+                                <div class="sub-menu disnone">
+                                    <a href="#" class="sub-item">Transactions</a>
+                                    <a href="#" class="sub-item">Income & Cost Statement</a>
+                                    <a href="#" class="sub-item">Customer</a>
+                                    <a href="#" class="sub-item">Accounts</a>
+                                    <a href="#" class="sub-item">Person Discount</a>
+                                    <a href="#" class="sub-item">Transaction Head</a>
+                                    <a href="#" class="sub-item">Merge Transaction Heads</a>
+                                    <a href="#" class="sub-item">Trial Balance</a>
+                                    <a href="#" class="sub-item">Cash Point Summary</a>
+                                </div>
+                            </div>
+
+                    
+                            <div class="item">
+                        
+                                <a class="sub-btn"><i class="fas fa-box-archive"></i>Products<i class="fas fa-angle-right dropdown"></i></a>
+                        
+                                <div class="sub-menu disnone">
+                                    <a href="#" class="sub-item">Product Forms</a>
+                                    <a href="#" class="sub-item">Product Generics</a>
+                                    <a href="#" class="sub-item">Product Catagories</a>
+                                    <a href="#" class="sub-item">Product Groups</a>
+                                    <a href="#" class="sub-item">Manufacturing Company</a>
+                                    <a href="#" class="sub-item">Products</a>
+                                    <a href="#" class="sub-item">Possible Duplicate Products</a>
+                                    <a href="#" class="sub-item">Merge Products</a>
+                                    <a href="#" class="sub-item">Stores</a>
+                                    <a href="#" class="sub-item">Product Subgroups</a>
+                                    <a href="#" class="sub-item">Unit</a>
+                                    <a href="#" class="sub-item">Update Rack, Stock & Discount</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+        
+                <!--search bar, topnav, profile avatar & modal tab-->
+
+                <div class="col-sm-10 pl0" style="background-color: #002E55;padding: 7px !important;">
+
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input class= "searchtext" type="text" placeholder="Search..." name="search">
+                            <button type="submit" style="border-color: white;"><i class="fa fa-search"></i></button>
+                            <i class="avatar fa fa-user fa-2x" aria-hidden="true"></i>
+                        </form>
+                    </div>
+                
+                    <div class="topnav">
+                        <a class="active ib sales1" id="sales1" href="#sales">Sales</a>
+                        <a class="ib salesreturn1" id="salesreturn1" href="#sales Return">Sales Return</a>
+                        <a class="ib" href="#offline Sales">Offline Sales</a>
+                    </div>
+              
+                    <!--sales tab-->
+
+                    <div class="sales-tab">
+
+                        <div class = "sc">
+                            <h6 class="topnav2 ib">Sales</h6>
+                        
+                            <div class="buttonbox">
+                                <button class="fa fa-search buttons" href="#Search"></button>
+                                <button class="fa-solid fa-filter buttons" href="#Filter"></button>
+                                <button class="fa-solid fa-print buttons" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"></button>
+                                <button class="fa-solid fa-download buttons" href="#Download"></button>
+                                <button class="fa-solid fa-cloud-arrow-up buttons" href="#Upload"></button>
+                                <button class="fa-regular fa-money-bill-1 buttons" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"></button>
+                                <button class="fa-sharp fa-solid fa-plus buttons" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+                            </div>
+                        </div>
+
+                        <table class="table">
+                            <thead style="background-color: #003E6C; font-size: small;">
+                                <tr>
+                                    <th scope="col">SL</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">VOUCHER</th>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">SALE BY</th>
+                                    <th scope="col">BUYER</th>
+                                    <th scope="col">AMOUNT</th>
+                                    <th scope="col">STATUS</th>
+                                    <th scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>7709444</td>
+                                    <td>-</td>
+                                    <td>12-12-2022</td>
+                                    <td>Rafiqul Islam</td>
+                                    <td>-</td>
+                                    <td>456.00</td>
+                                    <td>Completed</td>
+                                    <td><button type="button" class="btn btn-primary btn-sm">Details</button></td>
+                                </tr>
+                      
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>7709439</td>
+                                    <td>-</td>
+                                    <td>12-12-2022</td>
+                                    <td>Md Kayum Sarkar</td>
+                                    <td>-</td>
+                                    <td>90.00</td>
+                                    <td>Completed</td>
+                                    <td><button type="button" class="btn btn-primary btn-sm">Details</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                
+                    <!--sales return tab-->
+
+                    <div class="salesreturn-tab" style="display: none;">
+                        
+                        <div class = "sc">
+                            <h6 class="topnav2 ib">Sales Return</h6>
+                
+                            <div class="buttonbox">
+                                <button class="fa fa-search buttons" href="#Search"></button>
+                                <button class="fa-solid fa-filter buttons" href="#Filter"></button>
+                                <button class="fa-solid fa-print buttons" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3"></button>
+                                <button class="fa-solid fa-download buttons" href="#Download"></button>
+                                <button class="fa-sharp fa-solid fa-plus buttons" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4"></button>
+                            </div>
+                        </div>
+
+                   
+                        <table class="table">
+                            <thead style="background-color: #003E6C; font-size: small;">
+                                <tr>
+                                    <th scope="col">SL</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">SALES</th>
+                                    <th scope="col">TRX. ID</th>
+                                    <th scope="col">CUSTOMER</th>
+                                    <th scope="col">STORE POINT</th>
+                                    <th scope="col">AMOUNT</th>
+                                </tr>
+                            </thead>
+                
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>1111351</td>
+                                    <td>25-01-2023</td>
+                                    <td>7787069</td>
+                                    <td>8692425</td>
+                                    <td>-</td>
+                                    <td>BADAS PHARMACY - Ground Floor 1(Birdem)</td>
+                                    <td>855.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <!--credit sale modal on sales tab-->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+                        <div class="modal-dialog">
+      
+                            <div class="modal-content">
+                            
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New Sale</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="">
+                                    
+                                        <div class="container margin padding w100">
+
+                                            <div class="row">
+                        
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">DATE</h5>
+                                                    <input class="input-design" type="date" id="" name="">
+                                                </div>
+                   
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">SALE FROM</h5>
+                                                    <select class="input-design" id="" name="">
+                                                        <option value="volvo">BADAS Pharmacy - Ground Floor 1(Birdem)</option>
+                                                        <option value="saab">BADAS Pharmacy (Birdem 2)</option>
+                                                        <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
+                                                        <option value="fiat">BADAS Pharmacy (IGH savar)</option>
+                                                        <option value="fiat">BADAS Pharmacy (Jurain)</option>
+                                                        <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
+                                                        <option value="audi">BADAS Pharmacy (Gulshan)</option>
+                                                    </select>
+                                                    <h5 class="morebtn">Edit</h5>
+                                                </div>
+                                            </div>
+
+                                            <br>    
+
+                                            <div class="row">
+            
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">BUYER</h5>        
+                                                    <input class="input-design" id="" name="">
+                                                    <h5 class="morebtn">Add New Buyer</h5>
+                                                </div>
+                        
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">VOUCHER NO</h5>
+                                                    <input class="input-design" id="" name="">
+                                                </div>
+                                            </div>                 
+
+                                            <input type="checkbox">
+        
+                                            <div class="row">
+                        
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">ITEM</h5>
+                                                    <input class="input-design" id="item" name="">
+                                                    <h5 class="morebtn">Add</h5>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">BATCH</h5>
+                                                    <input class="input-design" id="batch" name="">
+                                                </div>
+                                            </div>
+
+                                            <br>
+                    
+                                            <div class="row">
+                        
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">UNIT</h5>
+                                                    <input class="input-design2"   id="unit" name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">QTY</h5>
+                                                    <input class="input-design2" id="pcs" type="number"  name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">RATE</h5>
+                                                    <input class="input-design2" id="rate" type="number"  name="">
+                                                </div>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="row">
+                                
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">DISCOUNT RATE(%)</h5>
+                                                    <input class="input-design2" id="discount" type="number"  name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">VAT RATE(%)</h5>
+                                                    <input class="input-design2" id="vat" type="number"  name="">
+                                                </div>
+                        
+                                                <div class="col-sm-4">
+                                                    <button type="button" class="btn btn-secondary addbtn" id="credit_add">+</button>
+                                                </div>
+                                            </div>
+
+
+                                            <table class="table">
+                                                <thead style="display:none" class="tbodyresult">
+                                                    <tr>
+                                                        <th scope="col">SL</th>
+                                                        <th scope="col">ITEM</th>
+                                                        <th scope="col">BATCH</th>
+                                                        <th scope="col">QTY</th>
+                                                        <th scope="col">RATE</th>
+                                                        <th scope="col">DISCOUNT</th>
+                                                        <th scope="col">VAT</th>
+                                                        <th scope="col">AMOUNT</th>
+                                                        <th scope="col">ACTION</th>
+                                                    </tr>
+                                                </thead>
+                                
+                                                <tbody id="product"> 
+                                                </tbody>
+                                            </table>
+
+                    
+                                            <table class="table">
+                                                <thead style="display:none" class="tbodyresult">
+                                                    <tr>
+                                                        <th scope="col">SUBTOTAL</th>
+                                                        <th scope="col">DISCOUNT (%)</th>
+                                                        <th scope="col">DEDUCTION</th>
+                                                        <th scope="col">VAT RATE (%)</th>
+                                                        <th scope="col">VAT AMOUNT</th>
+                                                        <th scope="col">ROUND</th>
+                                                        <th scope="col">TOTAL</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody style="display:none" id="product2"> 
+                                                    <tr>
+                                                        <td><input class="pricebox" type="text"  id="subtotal" name="subtotal" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="discountamount" name="discount" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="deductionamount" name="deduction" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="vatrateamount" name="vatrate" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="vatamount" name="vatamount" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="roundamount" name="round" readonly></td>
+                                                        <td><input class="pricebox" type="text"  id="totalamount" name="total" readonly></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="row">
+                        
+                                                <div class="col-sm-12">
+                                                    <h5 class="modal-text">SALE BY</h5>
+                                                    <input class="input-design2" id="" name="">
+                                                </div>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="row">
+                        
+                                                <div class="col-sm-2">
+                                                    <h5 class="modal-text">REMARKS</h5>
+                                                </div>
+                        
+                                                <div class="col-sm-10">
+                                                    <textarea style="background-color: #ffffff00; border-color: #ffffff;" rows="5" cols="88"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">On Hold</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--cash sale modal on sales tab-->
+
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New Cash Sale</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="">
+
+                                        <div class="container margin padding w100">
+                                            <input type="checkbox">
+                                            <h5 class="modal-text">PRODUCT WISE VAT DISCOUNT</h5>
+                            
+                                            <div class="row">
+                                
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">ITEM</h5>
+                                                    <input class="input-design" id="cashitem" name="">
+                                                    <h5 class="morebtn">Add</h5>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <h5 class="modal-text">BATCH</h5>
+                                                    <input class="input-design" id="cashbatch" name="">
+                                                </div>
+                                            </div>
+
+                                            <br>
+                            
+                                            <div class="row">
+                                
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">UNIT</h5>
+                                                    <input class="input-design2" id="cashunit" name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">QTY</h5>
+                                                    <input class="input-design2" id="cashpcs" name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <h5 class="modal-text">RATE</h5>
+                                                    <input class="input-design2" id="cashrate" name="">
+                                                </div>
+                                            </div>
+
+
+                                            <br>
+                            
+
+                                            <div class="row">
+                                
+                                                <div class="col-sm-3">
+                                                    <h5 class="modal-text">DISCOUNT RATE (%)</h5>
+                                                    <input class="input-design2" id="cashdiscount" name="">
+                                                    <h5 class="morebtn">Update Sale Options</h5>
+                                                </div>
+
+                                                <div class="col-sm-3">
+                                                    <h5 class="modal-text">VAT RATE (%)</h5>
+                                                    <input class="input-design2" id="cashvat" name="">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <button type="button" class="btn btn-secondary addbtn" id="cash_add">+</button>
+                                                </div>
+                                            </div>
+
+
+                                            <table class="table">
+                                                <thead style="display:none" class="tbodyresult2">
+                                                    <tr>
+                                                        <th scope="col">SL</th>
+                                                        <th scope="col">ITEM</th>
+                                                        <th scope="col">BATCH</th>
+                                                        <th scope="col">QTY</th>
+                                                        <th scope="col">RATE</th>
+                                                        <th scope="col">DISCOUNT</th>
+                                                        <th scope="col">VAT</th>
+                                                        <th scope="col">AMOUNT</th>
+                                                        <th scope="col">ACTION</th>
+                                                    </tr>
+                                                </thead>
+                                
+                                                <tbody id="product3"> 
+                                                </tbody>
+                                            </table>
+
+
+                                            <table class="table">
+                                                <thead style="display:none" class="tbodyresult2">
+                                                    <tr>
+                                                        <th scope="col">SUBTOTAL</th>
+                                                        <th scope="col">DISCOUNT (%)</th>
+                                                        <th scope="col">DEDUCTION</th>
+                                                        <th scope="col">VAT RATE (%)</th>
+                                                        <th scope="col">VAT AMOUNT</th>
+                                                        <th scope="col">ROUND</th>
+                                                        <th scope="col">TOTAL</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody style="display:none" id="product4"> 
+                                                    <tr>
+                                                        <td><input class="pricebox2" type="text"  id="cashsubtotal" name="cashsubtotal" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashdiscountamount" name="cashdiscount" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashdeductionamount" name="cashdeduction" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashvatrateamount" name="cashvatrate" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashvatamount" name="cashvatamount" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashroundamount" name="cashround" readonly></td>
+                                                        <td><input class="pricebox2" type="text"  id="cashtotalamount" name="cashtotal" readonly></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">On Hold</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <!--sales return modal on sales return tab-->
+
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        
+                        <div class="modal-dialog">
+    
+                            <div class="modal-content">
+                            
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sales Return</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="">
+                                    
+                                        <div class="container margin padding w100">
+
+                                            <h5 style="border-style: solid;padding: 5px;display: none;" class ='b_header'>Basic Information</h5>
+
+                                            <div class="b_container">
+                                                <h5>Basic Information</h5>
+
+                                                <div class="row">
+                            
+                                                    <div class="col-sm-6">
+                                                        <h5 class="modal-text">SALES RETURN DATE</h5>
+                                                        <input class="input-design4" type="date" id="" name="">
+                                                    </div>
+                    
+                                                    <div class="col-sm-6">
+                                                        <h5 class="modal-text">VOUCHER NO</h5>        
+                                                        <input class="input-design4" id="returnvoucher" name="">
+                                                    </div>
+                                                
+                                                </div>
+
+                                                <br>    
+
+                                                <div class="row">
+                    
+                                                    <div class="col-sm-6">
+                                                        <h5 class="modal-text">CUSTOMER</h5>
+                                                        <input class="input-design4" id="returncustomer" name="">
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <h5 class="modal-text">RECEIVER</h5>
+                                                        <input class="input-design4" id="returnreceiver" name="">
+                                                        <h5 class="morebtn">Add Receiver</h5>
+                                                    </div>
+                                                </div>                 
+
+                                                <div class="row">
+
+                                                    <div class="col-sm-12">
+                                                        <h5 class="modal-text">RETURN TO</h5>
+                                                        <select class="input-design4" id="returnto" name="">
+                                                            <option value="volvo">BADAS Pharmacy - Ground Floor 1(Birdem)</option>
+                                                            <option value="saab">BADAS Pharmacy (Birdem 2)</option>
+                                                            <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
+                                                            <option value="fiat">BADAS Pharmacy (IGH savar)</option>
+                                                            <option value="fiat">BADAS Pharmacy (Jurain)</option>
+                                                            <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
+                                                        </select>
+                                                        <h5 class="morebtn">Edit</h5>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+
+                                                    <div class="col-sm-12">
+                                                        <h5 class="modal-text">SALES</h5>
+                                                        <input class="input-design4" id="returnsales" name="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            <br>
+                                        
+                                            <h5 style="border-style: solid;padding: 5px;" class ='is_header'>Item and Service Information</h5>
+                                        
+                                            <div style="display: none;" class = 'is_container'>
+                                                <h5>Item and Service Information</h5>
+                                            
+                                                <div class="row">
+                                
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">ITEM</h5>
+                                                        <input class="input-design4" id="returnitem" name="">
+                                                        <h5 class="morebtn">Add</h5>
+                                                    </div>
+
+                                            
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">BATCH</h5>
+                                                        <input class="input-design4" id="returnbatch" name="">
+                                                    </div>
+                                        
+
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">EXPIRE</h5>
+                                                        <input class="input-design4" type="returnexpire" id="" name="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">UNIT</h5>
+                                                        <input class="input-design4" id="returnunit" name="">
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">QTY</h5>
+                                                        <input class="input-design4" id="returnpcs" name="">
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">RATE</h5>
+                                                        <input class="input-design4" id="returnrate" name="">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+                            
+                                                <div class="row">
+                                        
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">DISCOUNT RATE(%)</h5>
+                                                        <input class="input-design4" id="returndiscount" name="">
+                                                    </div>
+
+                                                    <div class="col-sm-4">
+                                                        <h5 class="modal-text">VAT RATE(%)</h5>
+                                                        <input class="input-design4" id="returnvat" name="">
+                                                    </div>
+                                    
+                                                    <div class="col-sm-4">
+                                                        <button type="button" class="btn btn-secondary addbtn" id="salesreturn_add">+</button>
+                                                    </div>
+                                                </div>
+
+                                    
+                                                <table class="table">
+                                                    <thead style="display:none" class="tbodyresult3">
+                                                        <tr>
+                                                            <th scope="col">SL</th>
+                                                            <th scope="col">ITEM</th>
+                                                            <th scope="col">BATCH</th>
+                                                            <th scope="col">QTY</th>
+                                                            <th scope="col">RATE</th>
+                                                            <th scope="col">DISCOUNT</th>
+                                                            <th scope="col">VAT</th>
+                                                            <th scope="col">AMOUNT</th>
+                                                            <th scope="col">ACTION</th>
+                                                        </tr>
+                                                    </thead>
+                                
+                                                    <tbody id="returnproduct"> 
+                                                    </tbody>
+                                                </table>
+
+                                                <table class="table">
+                                                    <thead style="display:none" class="tbodyresult3">
+                                                        <tr>
+                                                            <th scope="col">SUBTOTAL</th>
+                                                            <th scope="col">DISCOUNT (%)</th>
+                                                            <th scope="col">DEDUCTION</th>
+                                                            <th scope="col">VAT RATE (%)</th>
+                                                            <th scope="col">VAT AMOUNT</th>
+                                                            <th scope="col">ROUND</th>
+                                                            <th scope="col">TOTAL</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody style="display:none" id="returnproduct2"> 
+                                                        <tr>
+                                                            <td><input class="pricebox" type="text"  id="returnsubtotal" name="subtotal" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returndiscountamount" name="discount" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returndeductionamount" name="deduction" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returnvatrateamount" name="vatrate" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returnvatamount" name="vatamount" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returnroundamount" name="round" readonly></td>
+                                                            <td><input class="pricebox" type="text"  id="returntotalamount" name="total" readonly></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <div class="row">
+                                
+                                                    <div class="col-sm-12">
+                                                        <h5 class="modal-text">SALE BY</h5>
+                                                        <input class="input-design2" id="" name="">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="row">
+                                
+                                                    <div class="col-sm-2">
+                                                        <h5 class="modal-text">REMARKS</h5>
+                                                    </div>
+                                
+                                                    <div class="col-sm-10">
+                                                        <textarea style="background-color: #ffffff00; border-color: #ffffff;" rows="5" cols="88"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">On Hold</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!--print options modal on sales tab-->
+
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        
+                        <div class="modal-dialog">
+                
+                            <div class="modal-content">
+                
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Print Options</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                
+                                <div class="modal-body">
+                                    <form action="">
+                
+                                        <div class="container margin padding w100">
+                                                    
+                                            <div class="row">
+
+                                                <h5 class="modal-text">ALLOWED COLUMNS</h5>
+                                        
+                                                <div class="col-sm-4">
+                                                    <label for=""></label>
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                </div>
+                
+                                                <div class="col-sm-4">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                    <input type="checkbox">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                
+                                            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Apply Options</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--toggle function on sub menus-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+
+        $('.b_header').click(function(){
+            $('.b_container').show();
+            $('.b_header').hide();
+            $('.is_header').show();
+            $('.is_container').hide();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+
+        $('.is_header').click(function(){
+            $('.is_container').show();
+            $('.b_header').show();
+            $('.is_header').hide();
+            $('.b_container').hide();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+    </script>
+
+    <!--show/hide functions-->
+
+    <script>
+    $(document).ready(function(){
+      $(".sales1").click(function(){
+        $(".sales-tab").show();
+        $(".salesreturn-tab").hide();
+        var element = document.getElementById("sales1");
+        var element1 = document.getElementById("salesreturn1");
+        element.classList.add("active");
+        element1.classList.remove("active");
+
+      });
+
+      $(".salesreturn1").click(function(){
+        $(".salesreturn-tab").show();
+        $(".sales-tab").hide();
+        var element = document.getElementById("salesreturn1");
+        var element1 = document.getElementById("sales1");
+        element.classList.add("active");
+        element1.classList.remove("active");
+      });
+
+    });
+    </script>
+
+
+    <!--credit sale form-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var row = 1;
+        $(document).on('click', '#credit_add', function(){
+            
+        var subTotal = $("#subtotal").val();
+        var vatAmount = $("#vatamount").val();
+        var deductionAmount = $("#deductionamount").val();
+        var totalAmount = $("#totalamount").val();
+        var medItem = $("#item").val();
+        var medBatch = $("#batch").val();
+        var medUnit = $("#unit").val();
+        var medPcs = $("#pcs").val();
+        var medRate = $("#rate").val();
+        var medDiscount = $("#discount").val();
+        var medVat = $("#vat").val();
+           
+        var mainAmount = medRate * medPcs ;
+        var vatpercentAmount = (medVat * mainAmount) / 100 ;
+        var dispercentAmount = (medDiscount * mainAmount) / 100 ;
+        var medAmount = (medRate * medPcs) - dispercentAmount + vatpercentAmount ;
+
+        subTotal = (subTotal * 1) + mainAmount;
+        vatAmount = (vatAmount * 1) + vatpercentAmount;
+        deductionAmount = (deductionAmount * 1) + dispercentAmount;
+        totalAmount = (totalAmount * 1) + medAmount;
+        //totalAmount = Math.round(totalAmount);
+           
+        //console.log(subtotal);
+        if(medItem !== ''){
+        if(medPcs !== ''){
+        
+        $(".tbodyresult").show();
+        $("#product2").show();
+        $("#subtotal").val(subTotal);
+        $("#vatamount").val(vatAmount);
+        $("#deductionamount").val(deductionAmount);
+        $("#totalamount").val(totalAmount);
+
+        //console.log(subtotal);
+        var medDetail = '<tr>'+
+            '<th scope="row">'+row+'</th>'+
+            '<td>'+medItem+'</td>'+
+            '<td>'+medBatch+'</td>'+
+            '<td>'+medPcs+'</td>'+
+            '<td>'+medRate+'</td>'+
+            '<td class= "deduction_amount'+row+'" value ='+dispercentAmount+'>'+dispercentAmount+'</td>'+
+            '<td class= "vat_amount'+row+'" value ='+vatpercentAmount+'>'+vatpercentAmount+'</td>'+
+            '<td class= "med_amount'+row+'" value ='+medAmount+'>'+medAmount+'</td>'+
+            '<td><button type="button" value ='+row+'  class="btn btn-primary btn-sm creditdelete">Delete</button></td>'+
+            '</tr>';
+                   
+            $('#product').append(medDetail);
+            row++;
+        }else{
+            alert('Please Insert Quantity');
+        }   
+        }else{   
+            alert('Please Insert a Medicine Name');
+        } 
+    }); 
+
+    $(document).on('click', '.creditdelete', function(){
+        var value = $(this).val();
+        var deletedMedAmount = $(".med_amount"+value).attr("value");
+        var deleteddisAmount = $(".deduction_amount"+value).attr("value");
+        var deletedvatAmount = $(".vat_amount"+value).attr("value");
+        var subTotal = $("#subtotal").val();
+        var totalAmount = $("#totalamount").val();
+        var dispercentAmount = $("#deductionamount").val();
+        var vatpercentAmount = $("#vatamount").val();
+        var withoutVat = (deletedMedAmount * 1) - deletedvatAmount;
+        //alert(withoutVat);
+         subTotal = subTotal - (withoutVat * 1);
+         subTotal = subTotal.toFixed(2);
+         subTotal = subTotal - (deleteddisAmount * 1);
+         subTotal = subTotal.toFixed(2);
+        dispercentAmount = dispercentAmount - deleteddisAmount;
+        vatpercentAmount = vatpercentAmount - deletedvatAmount;
+        totalAmount = subTotal - dispercentAmount + vatpercentAmount;
+        $("#subtotal").val(subTotal);
+        $("#deductionamount").val(dispercentAmount);
+        $("#vatamount").val(vatpercentAmount);
+        $("#totalamount").val(totalAmount);
+        //alert(med);
+        $(this).parent().parent().remove();
+    });
+});
+    </script>
+
+
+    <!--cash sale form-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var cashrow = 1;
+            $(document).on('click', '#cash_add', function(){
+        
+        var cashsubTotal = $("#cashsubtotal").val();
+        var cashvatAmount = $("#cashvatamount").val();
+        var cashdeductionAmount = $("#cashdeductionamount").val();
+        var cashtotalAmount = $("#cashtotalamount").val();
+        var cashItem = $("#cashitem").val();
+        var cashBatch = $("#cashbatch").val();
+        var cashUnit = $("#cashunit").val();
+        var cashPcs = $("#cashpcs").val();
+        var cashRate = $("#cashrate").val();
+        var cashDiscount = $("#cashdiscount").val();
+        var cashVat = $("#cashvat").val();
+       
+        var cashmainAmount = cashRate * cashPcs ;
+        var cashvatpercentAmount = (cashVat * cashmainAmount) / 100 ;
+        var cashdispercentAmount = (cashDiscount * cashmainAmount) / 100 ;
+        var cashAmount = (cashRate * cashPcs) - cashdispercentAmount + cashvatpercentAmount ;
+
+        cashsubTotal = (cashsubTotal * 1) + cashmainAmount;
+        cashvatAmount = (cashvatAmount * 1) + cashvatpercentAmount;
+        cashdeductionAmount = (cashdeductionAmount * 1) + cashdispercentAmount;
+        cashtotalAmount = (cashtotalAmount * 1) + cashAmount;
+        //totalAmount = Math.round(totalAmount);
+       
+        //console.log(cashsubtotal);
+        if(cashItem !== ''){
+        if(cashPcs !== ''){
+        $(".tbodyresult2").show();
+        $("#product4").show();
+        $("#cashsubtotal").val(cashsubTotal);
+        $("#cashvatamount").val(cashvatAmount);
+        $("#cashdeductionamount").val(cashdeductionAmount);
+        $("#cashtotalamount").val(cashtotalAmount);
+
+        //console.log(cashsubtotal);
+        var cashDetail = '<tr>'+
+            '<th scope="cashrow">'+cashrow+'</th>'+
+            '<td>'+cashItem+'</td>'+
+            '<td>'+cashBatch+'</td>'+
+            '<td>'+cashPcs+'</td>'+
+            '<td>'+cashRate+'</td>'+
+            '<td class= "cashdeduction_amount'+cashrow+'" value ='+cashdispercentAmount+'>'+cashdispercentAmount+'</td>'+
+            '<td class= "cashvat_amount'+cashrow+'" value ='+cashvatpercentAmount+'>'+cashvatpercentAmount+'</td>'+
+            '<td class= "cash_amount'+cashrow+'" value ='+cashAmount+'>'+cashAmount+'</td>'+
+            '<td><button type="button" value ='+cashrow+' class="btn btn-primary btn-sm cashdelete">Delete</button></td>'+
+            '</tr>';
+      
+            $('#product3').append(cashDetail);
+            cashrow++;
+        }else{
+                alert('Please Insert Quantity');
+            }   
+        }else{   
+            alert('Please Insert a Medicine Name');
+        } 
+    }); 
+
+    $(document).on('click', '.cashdelete', function(){
+        var value = $(this).val();
+        var deletedCashAmount = $(".cash_amount"+value).attr("value");
+        var deletedCashdisAmount = $(".cashdeduction_amount"+value).attr("value");
+        var deletedCashvatAmount = $(".cashvat_amount"+value).attr("value");
+        var cashsubTotal = $("#cashsubtotal").val();
+        var cashtotalAmount = $("#cashtotalamount").val();
+        var cashdispercentAmount = $("#cashdeductionamount").val();
+        var cashvatpercentAmount = $("#cashvatamount").val();
+        var withoutCashVat = (deletedCashAmount * 1) - deletedCashvatAmount;
+        //alert(withoutCashVat);
+        cashsubTotal = cashsubTotal - (withoutCashVat * 1);
+        cashsubTotal = cashsubTotal.toFixed(2);
+        cashsubTotal = cashsubTotal - (deletedCashdisAmount * 1);
+        cashsubTotal = cashsubTotal.toFixed(2);
+        cashdispercentAmount = cashdispercentAmount - deletedCashdisAmount;
+        cashvatpercentAmount = cashvatpercentAmount - deletedCashvatAmount;
+        cashtotalAmount = cashsubTotal - cashdispercentAmount + cashvatpercentAmount;
+        $("#cashsubtotal").val(cashsubTotal);
+        $("#cashdeductionamount").val(cashdispercentAmount);
+        $("#cashvatamount").val(cashvatpercentAmount);
+        $("#cashtotalamount").val(cashtotalAmount);
+        //alert(cash);
+        $(this).parent().parent().remove();
+    });
+});
+    </script>
+
+
+
+    <!--return sale form-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var row = 1;
+            $(document).on('click', '#salesreturn_add', function(){
+                
+                var returnsubTotal = $("#returnsubtotal").val();
+                var returnvatAmount = $("#returnvatamount").val();
+                var returndeductionAmount = $("#returndeductionamount").val();
+                var returntotalAmount = $("#returntotalamount").val();
+                var returnItem = $("#returnitem").val();
+                var returnBatch = $("#returnbatch").val();
+                var returnUnit = $("#returnunit").val();
+                var returnPcs = $("#returnpcs").val();
+                var returnRate = $("#returnrate").val();
+                var returnDiscount = $("#returndiscount").val();
+                var returnVat = $("#returnvat").val();
+               
+                var returnmainAmount = returnRate * returnPcs ;
+                var returnvatpercentAmount = (returnVat * returnmainAmount) / 100 ;
+                var returndispercentAmount = (returnDiscount * returnmainAmount) / 100 ;
+                var returnAmount = (returnRate * returnPcs) - returndispercentAmount + returnvatpercentAmount ;
+    
+                returnsubTotal = (returnsubTotal * 1) + returnmainAmount;
+                returnvatAmount = (returnvatAmount * 1) + returnvatpercentAmount;
+                returndeductionAmount = (returndeductionAmount * 1) + returndispercentAmount;
+                returntotalAmount = (returntotalAmount * 1) + returnAmount;
+                //returntotalAmount = Math.round(returntotalAmount);
+               
+                //console.log(returnsubtotal);
+                if(returnItem !== ''){
+                if(returnPcs !== ''){
+                $(".tbodyresult3").show();
+                $("#returnproduct2").show();
+                $("#returnsubtotal").val(returnsubTotal);
+                $("#returnvatamount").val(returnvatAmount);
+                $("#returndeductionamount").val(returndeductionAmount);
+                $("#returntotalamount").val(returntotalAmount);
+    
+                //console.log(returnsubtotal);
+                var returnDetail = '<tr>'+
+                    '<th scope="row">'+row+'</th>'+
+                    '<td>'+returnItem+'</td>'+
+                    '<td>'+returnBatch+'</td>'+
+                    '<td>'+returnPcs+'</td>'+
+                    '<td>'+returnRate+'</td>'+
+                    '<td class= "returndeduction_amount'+row+'" value ='+returndispercentAmount+'>'+returndispercentAmount+'</td>'+
+                    '<td class= "returnvat_amount'+row+'" value ='+returnvatpercentAmount+'>'+returnvatpercentAmount+'</td>'+
+                    '<td class= "return_amount'+row+'" value ='+returnAmount+'>'+returnAmount+'</td>'+
+                    '<td><button type="button" value ='+row+'  class="btn btn-primary btn-sm returndelete">Delete</button></td>'+
+                    '</tr>';
+                       
+                    $('#returnproduct').append(returnDetail);
+                    row++;
+                }else{
+                    alert('Please Insert Quantity');
+                }   
+            }else{   
+                alert('Please Insert a Medicine Name');
+            } 
+        }); 
+    
+        $(document).on('click', '.returndelete', function(){
+            var value = $(this).val();
+            var deletedreturnAmount = $(".return_amount"+value).attr("value");
+            var deletedreturndisAmount = $(".returndeduction_amount"+value).attr("value");
+            var deletedreturnvatAmount = $(".returnvat_amount"+value).attr("value");
+            var returnsubTotal = $("#returnsubtotal").val();
+            var returntotalAmount = $("#returntotalamount").val();
+            var returndispercentAmount = $("#returndeductionamount").val();
+            var returnvatpercentAmount = $("#returnvatamount").val();
+            var returnwithoutVat = (deletedreturnAmount * 1) - deletedreturnvatAmount;
+            //alert(returnwithoutVat);
+            returnsubTotal = returnsubTotal - (returnwithoutVat * 1);
+            returnsubTotal = returnsubTotal.toFixed(2);
+            returnsubTotal = returnsubTotal - (deletedreturndisAmount * 1);
+            returnsubTotal = returnsubTotal.toFixed(2);
+            returndispercentAmount = returndispercentAmount - deletedreturndisAmount;
+            returnvatpercentAmount = returnvatpercentAmount - deletedreturnvatAmount;
+            returntotalAmount = returnsubTotal - returndispercentAmount + returnvatpercentAmount;
+            $("#returnsubtotal").val(returnsubTotal);
+            $("#returndeductionamount").val(returndispercentAmount);
+            $("#returnvatamount").val(returnvatpercentAmount);
+            $("#returntotalamount").val(returntotalAmount);
+            //alert(return);
+            $(this).parent().parent().remove();
+        });
+    });
+        </script>
+
+</body>
+
+</html>
