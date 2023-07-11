@@ -134,333 +134,7 @@
 
             <div class="col-sm-10 pl0" style="background-color: #002E55;padding: 7px !important;">
 
-
-                <div class="topnav">
-                    <a class="active ib purchase1" id="purchase1" href="#purchase">Purchase</a>
-                    <a class="ib purchasereturn1" id="purchasereturn1" href="#purchase_return">Purchase Return</a>
-                </div>
-
-                <!--procurement_purchase modal-->
-
-                <div class="modal fade" id="procurepurchaseModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-
-                    <div class="modal-dialog">
-
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Purchase</h5>
-                                <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                <form action="">
-
-                                    <div class="container margin padding w100">
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">PURCHASE DATE</h5>
-                                                <input class="input-design4" type="date" id="" name="">
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">VOUCHER NO</h5>
-                                                <input class="input-design4" id="procure_purchasevoucher" name="">
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">SUPPLIER</h5>
-                                                <select class="input-design4" id="procure_purchasesupplier" name="">
-                                                    <option value="volvo">MULTI BRANDS LTD.</option>
-                                                    <option value="saab">M.I. International</option>
-                                                    <option value="fiat">Dabimax IMP. and Export Ltd.</option>
-                                                    <option value="fiat">Niroz Agency</option>
-                                                    <option value="fiat">Xebec Healthcare Ltd.</option>
-                                                    <option value="fiat">Gaco Pharmaceuticals</option>
-                                                </select>
-                                                <h5 class="morebtn">Add Supplier</h5>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">RECEIVER</h5>
-                                                <select class="input-design4" id="procure_purchasereceiver" name="">
-                                                    <option value="volvo">Rural Healthcare Center Ukhia</option>
-                                                    <option value="saab">Khadiza Akter</option>
-                                                    <option value="fiat">Birdem Cash Counter-1</option>
-                                                    <option value="fiat">Rinki Sarkar</option>
-                                                    <option value="fiat">Shanto Hasan</option>
-                                                    <option value="fiat">Sinthea Khan</option>
-                                                </select>
-                                                <h5 class="morebtn">Add Receiver</h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">PURCHASE TO</h5>
-                                                <select class="input-design4" id="procure_purchasepurchaseto" name="">
-                                                    <option value="volvo">BADAS Pharmacy - Ground Floor 1(Birdem)
-                                                    </option>
-                                                    <option value="saab">BADAS Pharmacy (Birdem 2)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
-                                                    <option value="fiat">BADAS Pharmacy (IGH savar)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Jurain)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
-                                                </select>
-                                                <h5 class="morebtn">Edit</h5>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">SECTION</h5>
-                                                <select class="input-design4" id="procure_purchasesection" name="">
-                                                    <option value="volvo">Others</option>
-                                                    <option value="saab">Consumer Products</option>
-                                                    <option value="fiat">Medical Item</option>
-                                                    <option value="fiat">Medicine</option>
-                                                    <option value="fiat">Surgical</option>
-                                                    <option value="fiat">Pharmacy</option>
-                                                </select>
-                                                <h5 class="morebtn">Add Section</h5>
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">ITEM</h5>
-                                                <input class="input-design4" id="procure_purchaseitem" name="">
-                                                <h5 class="morebtn">Add</h5>
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">BATCH</h5>
-                                                <input class="input-design4" id="procure_purchasebatch" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">EXPIRE</h5>
-                                                <input class="input-design4" id="procure_purchaseexpire" name="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">UNIT</h5>
-                                                <input class="input-design4" id="procure_purchaseunit" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">QTY</h5>
-                                                <input class="input-design4" id="procure_purchasepcs" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">RATE</h5>
-                                                <input class="input-design4" id="procure_purchaserate" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <button type="button" class="btn btn-secondary addbtn"
-                                                    id="procure_purchase_add">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">On Hold</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--procurement_purchase_return modal-->
-
-                <div class="modal fade" id="purchasereturnModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-
-                    <div class="modal-dialog">
-
-                        <div class="modal-content">
-
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Purchase Return</h5>
-                                <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                <form action="">
-
-                                    <div class="container margin padding w100">
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">DATE</h5>
-                                                <input class="input-design4" type="date" id="" name="">
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">RETURN FROM</h5>
-                                                <select class="input-design4" id="procure_purchaseto" name="">
-                                                    <option value="volvo">BADAS Pharmacy - Ground Floor 1(Birdem)
-                                                    </option>
-                                                    <option value="saab">BADAS Pharmacy (Birdem 2)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
-                                                    <option value="fiat">BADAS Pharmacy (IGH savar)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Jurain)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
-                                                </select>
-                                                <h5 class="morebtn">Edit</h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">SUPPLIER</h5>
-                                                <select class="input-design4" id="procure_purchase_returnsupplier"
-                                                    name="">
-                                                    <option value="volvo">MULTI BRANDS LTD.</option>
-                                                    <option value="saab">M.I. International</option>
-                                                    <option value="fiat">Dabimax IMP. and Export Ltd.</option>
-                                                    <option value="fiat">Niroz Agency</option>
-                                                    <option value="fiat">Xebec Healthcare Ltd.</option>
-                                                    <option value="fiat">Gaco Pharmaceuticals</option>
-                                                </select>
-                                                <h5 class="morebtn">Add Supplier</h5>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">VOUCHER NO</h5>
-                                                <input class="input-design4" id="procure_purchase_returnvoucher"
-                                                    name="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-12">
-                                                <h5 class="modal-text">PURCHASE</h5>
-                                                <input class="input-design4" id="procure_purchase_returnvoucher"
-                                                    name="">
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">ITEM</h5>
-                                                <input class="input-design4" id="procure_purchase_returnitem" name="">
-                                                <h5 class="morebtn">Add</h5>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">BATCH</h5>
-                                                <input class="input-design4" id="procure_purchase_returnbatch" name="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">UNIT</h5>
-                                                <input class="input-design4" id="procure_purchase_returnunit" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">QTY</h5>
-                                                <input class="input-design4" id="procure_purchase_returnpcs" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <h5 class="modal-text">RATE</h5>
-                                                <input class="input-design4" id="procure_purchase_returnrate" name="">
-                                            </div>
-
-                                            <div class="col-sm-3">
-                                                <button type="button" class="btn btn-secondary addbtn"
-                                                    id="procure_purchase_return_add">+</button>
-                                            </div>
-
-                                        </div>
-
-                                        <br>
-
-                                        <div class="row">
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">RETURN BY</h5>
-                                                <select class="input-design4" id="returnto" name="">
-                                                    <option value="volvo">Rural Healthcare Center Ukhia</option>
-                                                    <option value="saab">Khadiza Akter</option>
-                                                    <option value="fiat">Birdem Cash Counter-1</option>
-                                                    <option value="fiat">Rinki Sarkar</option>
-                                                    <option value="fiat">Shanto Hasan</option>
-                                                    <option value="fiat">Sinthea Khan</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">SECTION</h5>
-                                                <select class="input-design4" id="procure_pruchasesection" name="">
-                                                    <option value="volvo">Others</option>
-                                                    <option value="saab">Consumer Products</option>
-                                                    <option value="fiat">Medical Item</option>
-                                                    <option value="fiat">Medicine</option>
-                                                    <option value="fiat">Surgical</option>
-                                                    <option value="fiat">Pharmacy</option>
-                                                </select>
-                                                <h5 class="morebtn">Add Section</h5>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-
-                                            <div class="col-sm-2">
-                                                <h5 class="modal-text">REMARKS</h5>
-                                            </div>
-
-                                            <div class="col-sm-10">
-                                                <textarea style="background-color: #ffffff00; border-color: #ffffff;"
-                                                    rows="5" cols="88"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">On Hold</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <!--procurement_purchase tab-->
+                <!--PURCHASE tab-->
 
                 <div class="procure_purchase-tab" style="background-color: #003E6C;"> <br>
 
@@ -538,57 +212,11 @@
 
 
 
-                <!--procurement_purchase_return tab-->
-
-                <div class="procure_purchase_return-tab" style="background-color: #003E6C; display: none;"> <br>
-
-                    <div class="sc">
-                        <h6 class="topnav2 ib">Purchase Return</h6>
-
-                        <div class="buttonbox">
-                            <button class="fa fa-search buttons" href="#Search"></button>
-                            <button class="fa-solid fa-filter buttons" href="#Filter"></button>
-                            <button class="fa-solid fa-print buttons" type="button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal3"></button>
-                            <button class="fa-solid fa-download buttons" href="#Download"></button>
-                            <button class="fa-sharp fa-solid fa-plus buttons  " type="button" data-bs-toggle="modal"
-                                data-bs-target="#purchasereturnModal"></button>
-                        </div>
-                    </div>
-
-                    <table class="table">
-                        <thead style="background-color: #003E6C; font-size: small;">
-                            <tr>
-                                <th scope="col">SL</th>
-                                <th scope="col">DATE</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">VOUCHER NO</th>
-                                <th scope="col">RETURN BY</th>
-                                <th scope="col">STORE POINT</th>
-                                <th scope="col">SECTION</th>
-                                <th scope="col">AMOUNT</th>
-                            </tr>
-                        </thead>
-
-                        <tbody style="background-color: #154883">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>04-06-2022</td>
-                                <td>6952857</td>
-                                <td>-</td>
-                                <td>Dipta Ray Chowdhury</td>
-                                <td>BADAS Pharmacy (Birdem 2)</td>
-                                <td>-</td>
-                                <td>9000.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="col-md-12 2" id="procurmentPurchase" style="padding-top: 3%;">
+                <!--SUMMARY-->
+                <div class="col-md-10 2" id="procurmentPurchase" style="padding-left: 10%; padding-top: 5%;">
 
                     <div class="modal-header">
-                        <h5 class=" text-center" id="exampleModalLabel">Procurment Purchase Order</h5>
+                        <h5 class=" text-center" id="exampleModalLabel">PURCHASE ORDER</h5>
                         <button type="button" class="btn-close btn-close-white" id="Xclose" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -597,14 +225,23 @@
 
                             <div class="row">
 
-                                <div class="col-sm-6">
-                                    <h5 class="modal-text">DATE:</h5>
-                                    <span id="requisitionDate">2023-06-02</span>
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text">REUISITION DATE: <span id="requisitionDate">
+                                            2023-06-02</span> </h5>
+
                                 </div>
 
-                                <div class="col-sm-6">
-                                    <h5 class="modal-text" id="reqClient">STORE NAME :</h5>
-                                    <span id="requisitionFor">BADAS Pharmacy (Jurain)</span>
+
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text">PURCHASE ORDER DATE: <span id="requisitionDate">
+                                            2023-06-02</span></h5>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text" id="reqClient">STORE NAME : <span id="requisitionFor">BADAS
+                                            Pharmacy (Jurain)</span></h5>
+
                                 </div>
                             </div>
 
@@ -614,13 +251,15 @@
                             <div class="row ">
 
                                 <div class="col-sm-6">
-                                    <h5 class="modal-text">Company :</h5>
-                                    <span id="requisitionReceiver">SQUARE PHARMACITICAL</span>
+                                    <h5 class="modal-text">Company : <span id="requisitionReceiver">SQUARE
+                                            PHARMACITICAL</span></h5>
+
                                 </div>
 
                                 <div class="col-sm-6">
-                                    <h5 class="modal-text" id="reqClient">DEPARTMENT :</h5>
-                                    <span id="requisitionDepartment">BADAS Pharmacy (IGH savar)</span>
+                                    <h5 class="modal-text" id="reqClient">DEPARTMENT : <span
+                                            id="requisitionDepartment">BADAS Pharmacy (IGH savar)</span></h5>
+
                                 </div>
                             </div>
 
@@ -631,6 +270,8 @@
                                         <th scope="col">SL</th>
                                         <th scope="col">ITEM</th>
                                         <th scope="col">QTY</th>
+                                        <th scope="col">EXPIRE DATE</th>
+                                        <th scope="col">ACTION</th>
 
                                     </tr>
                                 </thead>
@@ -640,56 +281,100 @@
                                 <tr>
                                     <th>1</th>
                                     <td>Abilify Maintena</td>
-                                    <td>2 pcs</td>
+                                    <td>
+
+                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                            style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
+                                        pcs
+                                        <span>
+                                            <button class="fa-solid fa-angle-down buttons"
+                                                style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
+                                                type="button" id="itemDecrease"></button>
+                                        </span>
+
+                                    </td>
+                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                            style="width: 200px;"></td>
+                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
 
                                 </tr>
 
                                 <tr>
                                     <th>2</th>
                                     <td>Acetaminophen.</td>
-                                    <td>5 pcs</td>
+                                    <td>
+
+                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                            style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
+                                        pcs
+                                        <span>
+                                            <button class="fa-solid fa-angle-down buttons"
+                                                style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
+                                                type="button" id="itemDecrease"></button>
+                                        </span>
+
+                                    </td>
+                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                            style="width: 200px;"></td>
+                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
 
                                 </tr>
 
                                 <tr>
                                     <th>3</th>
                                     <td>Azithromycin</td>
-                                    <td>10 pcs</td>
+                                    <td>
+
+                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                            style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
+                                        pcs
+                                        <span>
+                                            <button class="fa-solid fa-angle-down buttons"
+                                                style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
+                                                type="button" id="itemDecrease"></button>
+                                        </span>
+
+                                    </td>
+                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                            style="width: 200px;"></td>
+                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
 
                                 </tr>
 
                                 <tr>
                                     <th>4</th>
                                     <td>Ibandronate</td>
-                                    <td>2 pcs</td>
+                                    <td>
 
+                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                            style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
+                                        pcs
+                                        <span>
+                                            <button class="fa-solid fa-angle-down buttons"
+                                                style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
+                                                type="button" id="itemDecrease"></button>
+                                        </span>
+
+                                    </td>
+                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                            style="width: 200px;"></td>
+                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
                                 </tr>
 
                             </table>
 
-                            <div class="row" id="remarkBox">
 
-                                <div class="col-sm-2">
-                                    <h5 class="modal-text row-cols-md-auto">REMARKS</h5>
-                                </div>
-
-                                <div class="col-sm-10">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolorem
-                                        unde mollitia eum
-                                        dolorum quae! Eius quos assumenda corporis, et amet autem possimus illo,
-                                        quasi,
-                                        similique
-                                        molestias perspiciatis sunt quisquam?Lorem ipsum dolor sit amet
-                                        consectetur adipisicing
-                                        elit. Quasi delectus dolorem perspiciatis quidem qui assumenda dicta nam
-                                        quos animi, est
-                                        totam repellat odio et. Dignissimos, quibusdam. Impedit explicabo fuga
-                                        sint.</p>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">GOOD
+                                    RECEIVED</button>
+                                <button type="button" class="btn btn-danger">ON HOLD</button>
                             </div>
+
+
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
