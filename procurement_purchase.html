@@ -278,7 +278,7 @@
 
 
 
-                                <tr>
+                                <tr id='item'>
                                     <th>1</th>
                                     <td>Abilify Maintena</td>
                                     <td>
@@ -295,11 +295,12 @@
                                     </td>
                                     <td> <input class="input-design4" type="date" id="requisition_Date" name=""
                                             style="width: 200px;"></td>
-                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
+                                    <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
+                                    </td>
 
                                 </tr>
 
-                                <tr>
+                                <tr id='item'>
                                     <th>2</th>
                                     <td>Acetaminophen.</td>
                                     <td>
@@ -316,11 +317,12 @@
                                     </td>
                                     <td> <input class="input-design4" type="date" id="requisition_Date" name=""
                                             style="width: 200px;"></td>
-                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
+                                    <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
+                                    </td>
 
                                 </tr>
 
-                                <tr>
+                                <tr id='item'>
                                     <th>3</th>
                                     <td>Azithromycin</td>
                                     <td>
@@ -337,11 +339,12 @@
                                     </td>
                                     <td> <input class="input-design4" type="date" id="requisition_Date" name=""
                                             style="width: 200px;"></td>
-                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
+                                    <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
+                                    </td>
 
                                 </tr>
 
-                                <tr>
+                                <tr id='item'>
                                     <th>4</th>
                                     <td>Ibandronate</td>
                                     <td>
@@ -358,7 +361,8 @@
                                     </td>
                                     <td> <input class="input-design4" type="date" id="requisition_Date" name=""
                                             style="width: 200px;"></td>
-                                    <td><i class="fa fa-remove" style="font-size:48px;color:red"></i> </td>
+                                    <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
+                                    </td>
                                 </tr>
 
                             </table>
@@ -367,7 +371,7 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">GOOD
                                     RECEIVED</button>
-                                <button type="button" class="btn btn-danger">ON HOLD</button>
+                                <button type="button" id="onHoldEvent" class="btn btn-danger">ON HOLD</button>
                             </div>
 
 
@@ -387,6 +391,7 @@
 
     <script>
         $(document).ready(function () {
+
             //jquery for toggle sub menus
             $('.sub-btn').click(function () {
                 $(this).next('.sub-menu').slideToggle();
@@ -414,6 +419,82 @@
                 $('.procure_purchase-tab').show(1000)
 
             })
+
+            //Delete the items 
+
+            var itemList = [];
+
+            $(document).on('click', '#itemRemove', function () {
+                var removedItem = $(this).closest('tr').find('td#item').text();
+                itemList = itemList.filter(item => item !== removedItem);
+                $(this).closest('tr').remove();
+            });
+
+            ///DECREASE THE ITEM QUANTITY
+            $(document).on('click', '#itemDecrease', function () {
+
+                var quantityLine = $(this).closest('tr');
+                var quantityCell = quantityLine.find('input');
+                var quantityValue = quantityCell.val().trim()
+                var quantity = quantityValue;
+                if (quantity > 0) {
+                    var newQuantity = quantity - 1;
+                    quantityCell.val(newQuantity)
+                    $('#targetEvents').show()
+                }
+
+            })
+
+            //Item Text box Update
+
+            $(document).on('click', '#quantity', (e) => {
+
+
+
+                let currentValue = Number(e.target.value)
+
+
+                $(document).on('change', '#quantity', (e) => {
+                    let inputValue = Number($(e.target).val())
+
+
+                    if (inputValue >= currentValue) {
+                        alert(` Input value must be lower than the ${currentValue} `);
+                        $(e.target).val(currentValue)
+
+                    } else {
+                        currentValue = inputValue
+                        $('#targetEvents').show()
+
+
+                    }
+                })
+            })
+
+            //Item input/output  on purchase table
+
+            $(document).on('click', '#onHoldEvent', () => {
+                alert('Close To heart')
+                var purchaseOrder =
+                    `
+                    <tr id='item'>
+                        <tr>
+
+                      <th scope="col">1002</th>
+                      <th scope="col">2022</th>
+                      <th scope="col">BAADAS PHARMACY</th>
+                      <th scope="col">SQUARE PHARMACITICAL</th>
+                      <th scope="col">
+                      <button class="fa-solid fa-eye  fa-xl buttons" style="color: #000000;background-color:#004A88; border: none;" type="button" id="viewEvent" class="btn btn-info" data-bs-dismiss="modal"></button>
+                      </th>
+                      </tr>`
+
+                $('#purchaseTable').append(purchaseOrder)
+                $('#procurmentPurchase').hide(1000)
+                $('.procure_purchase-tab').show(1000)
+
+            })
+
 
 
         });
