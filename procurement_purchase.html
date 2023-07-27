@@ -61,6 +61,7 @@
                                     <a href="procurement_order.html" class="sub-item">Order</a>
                                     <a href="procurement_purchase.html" class="sub-item">Purchase</a>
                                     <a href="procurement_transfer.html" class="sub-item">Transfer</a>
+                                    <a href="procurement_inventory.html" class="sub-item">Inventory</a>
                                     <a href="procurement_adjustment.html" class="sub-item">Adjustment</a>
                                 </div>
 
@@ -270,7 +271,7 @@
                                         <th scope="col">SL</th>
                                         <th scope="col">ITEM</th>
                                         <th scope="col">QTY</th>
-                                        <th scope="col">EXPIRE DATE</th>
+                                        <th scope="col">EXPIRY DATE</th>
                                         <th scope="col">ACTION</th>
 
                                     </tr>
@@ -293,7 +294,7 @@
                                         </span>
 
                                     </td>
-                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                    <td> <input class="input-design4" type="date" id="expiry_Date" name=""
                                             style="width: 200px;"></td>
                                     <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
                                     </td>
@@ -315,7 +316,7 @@
                                         </span>
 
                                     </td>
-                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                    <td> <input class="input-design4" type="date" id="expiry_Date" name=""
                                             style="width: 200px;"></td>
                                     <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
                                     </td>
@@ -327,7 +328,7 @@
                                     <td>Azithromycin</td>
                                     <td>
 
-                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                        <input id='quantity' value='30' type="number"  class="disable-arrows"
                                             style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
                                         pcs
                                         <span>
@@ -337,7 +338,7 @@
                                         </span>
 
                                     </td>
-                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                    <td> <input class="input-design4" type="date" id="expiry_Date" name=""
                                             style="width: 200px;"></td>
                                     <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
                                     </td>
@@ -349,7 +350,7 @@
                                     <td>Ibandronate</td>
                                     <td>
 
-                                        <input id='quantity' value='30' type="number" class="disable-arrows"
+                                        <input id='quantity' value='30' type="number"   class="disable-arrows"
                                             style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
                                         pcs
                                         <span>
@@ -359,7 +360,7 @@
                                         </span>
 
                                     </td>
-                                    <td> <input class="input-design4" type="date" id="requisition_Date" name=""
+                                    <td> <input class="input-design4" type="date" id="expiry_Date" name=""
                                             style="width: 200px;"></td>
                                     <td><i class="fa fa-remove" id="itemRemove" style="font-size:48px;color:red"></i>
                                     </td>
@@ -369,8 +370,8 @@
 
 
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">GOOD
-                                    RECEIVED</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="goodRec">GOOD
+                                    RECEIVED </button>
                                 <button type="button" id="onHoldEvent" class="btn btn-danger">ON HOLD</button>
                             </div>
 
@@ -470,6 +471,22 @@
                     }
                 })
             })
+
+
+            //Good Received button enabled/disabled
+            $('#goodRec').prop('disabled', true); 
+      
+            $(document).on('input', '#expiry_Date', () => {
+                const reqDate = $("#expiry_Date").val();
+                
+                if (reqDate !== '') {
+                    $('#goodRec').prop('disabled', false); // Enable the button
+                } else {
+                    $('#goodRec').prop('disabled', true); // Disable the button
+                }
+            });
+
+            
 
             //Item input/output  on purchase table
 
