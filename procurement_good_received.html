@@ -163,13 +163,13 @@
                             <div class="row">
 
                                 <div class="col-sm-6">
-                                    <h5 class="modal-text">PURCHASE ORDER DATE: <span id="requisitionDate"></span>
+                                    <h5 class="modal-text">DATE: <span id="requisitionDate"></span>
                                     </h5>
 
                                 </div>
 
                                 <div class="col-sm-6">
-                                    <h5 class="modal-text">DATE:<span id="">2023-06-19</span></h5>
+                                    <h5 class="modal-text">OUTLET:<span id="">2</span></h5>
 
                                 </div>
 
@@ -181,23 +181,29 @@
                             <div class="row ">
 
 
-
-                                <div class="col-sm-6">
-                                    <h5 class="modal-text">COMPANY NAME : <span id="requisitionReceiver"></span>
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text">PO ID: <span id="requisitionReceiver"></span>
                                     </h5>
 
                                 </div>
 
-                                <div class="col-sm-6">
-                                    <h5 class="modal-text" id="reqClient">STORE NAME : <span id="requisitionFor">BADDAS
-                                            PHARMACY (TONGI)</span></h5>
+
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text" id="reqClient">PR ID : <span id="requisitionFor"> </span>
+                                    </h5>
 
                                 </div>
 
                                 <br /> <br />
-                                <div class="col-sm-6">
-                                    <h5 class="modal-text" id="reqClient">DEPARTMENT : <span
-                                            id="requisitionDepartment">BADDAS PHARMACY (TONGI)</span></h5>
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text" id="reqClient">PURCHASE ID : <span
+                                            id="requisitionDepartment"> </span></h5>
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <h5 class="modal-text">COMPANY NAME : <span id="requisitionReceiver"></span>
+                                    </h5>
 
                                 </div>
                             </div>
@@ -208,32 +214,19 @@
                                         <th scope="col">SL</th>
                                         <th scope="col">ITEM</th>
                                         <th scope="col">QTY</th>
-                                        <th scope="col">ACTION</th>
+
                                     </tr>
                                 </thead>
 
                                 <tbody id="addTable">
 
+                                    
+
                                     <tr class="ccc">
                                         <th scope="row">1001</th>
                                         <td id='item'>NAPA</td>
                                         <td>
-                                            <input id='quantity' value='30' type="number" class="disable-arrows"
-                                                style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
-                                            pcs
-                                            <span>
-                                                <button class="fa-solid fa-angle-down buttons"
-                                                    style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
-                                                    type="button" id="itemDecrease"></button>
-                                            </span>
-                                        </td>
-                                        </td>
-
-                                        <td>
-                                            <button type="button" id="openBtn"
-                                                class="itemRemove btn btn-danger btn-sm creditdelete">
-                                                Delete
-                                            </button>
+                                            <p><span>30</span> pcs</p>
 
                                         </td>
                                     </tr>
@@ -242,20 +235,26 @@
                                         <th scope="row">1001</th>
                                         <td id='item'>NAPA</td>
                                         <td>
-                                            <input id='quantity' value='30' type="number" class="disable-arrows"
-                                                style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
-                                            pcs
-                                            <span>
-                                                <button class="fa-solid fa-angle-down buttons"
-                                                    style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
-                                                    type="button" id="itemDecrease"></button>
-                                            </span>
+                                            <p><span>30</span> pcs</p>
+
                                         </td>
+                                    </tr>
+                                      
+                                    <tr class="ccc">
+                                        <th scope="row">1001</th>
+                                        <td id='item'>NAPA</td>
                                         <td>
-                                            <button type="button" id="openBtn"
-                                                class="itemRemove btn btn-danger btn-sm creditdelete">
-                                                Delete
-                                            </button>
+                                            <p><span>30</span> pcs</p>
+
+                                        </td>
+                                    </tr>
+                                
+
+                                    <tr class="ccc">
+                                        <th scope="row">1001</th>
+                                        <td id='item'>NAPA</td>
+                                        <td>
+                                            <p><span>30</span> pcs</p>
 
                                         </td>
                                     </tr>
@@ -264,20 +263,7 @@
                                         <th scope="row">1001</th>
                                         <td id='item'>NAPA</td>
                                         <td>
-                                            <input id='quantity' value='30' type="number" class="disable-arrows"
-                                                style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
-                                            pcs
-                                            <span>
-                                                <button class="fa-solid fa-angle-down buttons"
-                                                    style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
-                                                    type="button" id="itemDecrease"></button>
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <button type="button" id="openBtn"
-                                                class="itemRemove btn btn-danger btn-sm creditdelete">
-                                                Delete
-                                            </button>
+                                            <p><span>30</span> pcs</p>
 
                                         </td>
                                     </tr>
@@ -286,20 +272,7 @@
                                         <th scope="row">1001</th>
                                         <td id='item'>NAPA</td>
                                         <td>
-                                            <input id='quantity' value='30' type="number" class="disable-arrows"
-                                                style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
-                                            pcs
-                                            <span>
-                                                <button class="fa-solid fa-angle-down buttons"
-                                                    style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
-                                                    type="button" id="itemDecrease"></button>
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <button type="button" id="openBtn"
-                                                class="itemRemove btn btn-danger btn-sm creditdelete">
-                                                Delete
-                                            </button>
+                                            <p><span>30</span> pcs</p>
 
                                         </td>
                                     </tr>
@@ -308,20 +281,25 @@
                                         <th scope="row">1001</th>
                                         <td id='item'>NAPA</td>
                                         <td>
-                                            <input id='quantity' value='30' type="number" class="disable-arrows"
-                                                style="background-color: #7a5715; width: 35px;border-radius: 5px;" />
-                                            pcs
-                                            <span>
-                                                <button class="fa-solid fa-angle-down buttons"
-                                                    style="border-radius: 15px; padding: 4px; margin-left: 5px; background-color: rgb(124, 160, 135);"
-                                                    type="button" id="itemDecrease"></button>
-                                            </span>
+                                            <p><span>30</span> pcs</p>
+
                                         </td>
+                                    </tr>
+
+                                    <tr class="ccc">
+                                        <th scope="row">1001</th>
+                                        <td id='item'>NAPA</td>
                                         <td>
-                                            <button type="button" id="openBtn"
-                                                class="itemRemove btn btn-danger btn-sm creditdelete">
-                                                Delete
-                                            </button>
+                                            <p><span>30</span> pcs</p>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr class="ccc">
+                                        <th scope="row">1001</th>
+                                        <td id='item'>NAPA</td>
+                                        <td>
+                                            <p><span>30</span> pcs</p>
 
                                         </td>
                                     </tr>
@@ -329,14 +307,7 @@
                             </table>
 
 
-                            <div id="targetEvents">
-                                <div class="modal-footer" id="buttonShow">
-                                    <button type="button" id="holdEvent" class="btn  btn-secondary"
-                                        data-bs-dismiss="modal">On Hold</button>
-                                    <button type="button" id="submitEvent" class="btn  btn-primary">Submit</button>
-                                </div>
-                            </div>
-
+                           
 
                         </form>
                     </div>
@@ -631,7 +602,7 @@
                     <div class="row">
 
                         <div class="col-sm-6">
-                            <h5 class="modal-text">PURCHASE ORDER DATE: <span id="requisitionDate"></span>
+                            <h5 class="modal-text">DATE: <span id="requisitionDate"></span>
                             </h5>
 
                         </div>
