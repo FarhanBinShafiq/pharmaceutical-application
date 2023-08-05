@@ -322,7 +322,7 @@
                     <div class="procure_purchase-tab" id="goodReceivedTable" style="background-color: #200303;"> <br>
 
                         <div class="sc">
-                            <h6 class="topnav2 ib">Good Received</h6>
+                            <h6 class="topnav2 ib">Stock</h6>
 
                             <div class="buttonbox">
                                 <button class="fa fa-search buttons" href="#Search" type="button" data-bs-toggle="modal"
@@ -339,11 +339,11 @@
                                 <tr>
 
                                     <th scope="col">SL</th>
-                                    <th scope="col">COMPANY</th>
-                                    <th scope="col">PR ID</th>
-                                    <th scope="col">PO ID</th>
-                                    <th scope="col">Purchase ID</th>
-                                    <th scope="col">Amount in Taka</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Generics Name</th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">Purchase ID NO.</th>
+                                    <th scope="col">Expirey`</th>
                                     <th scope="col">CHECK Detail</th>
 
                                 </tr>
@@ -485,32 +485,31 @@
 
                                             <div class="col-sm-6">
                                                 <h5 class="modal-text">COMPANY NAME</h5>
-                                                <select class="input-design4" id="purchaseReqFor" name=""
-                                                    style="margin-bottom: 3%;">
-
-
-                                                    <option value="saab">Choose Company</option>
-                                                    <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
-                                                    <option value="fiat">BADAS Pharmacy (IGH savar)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Jurain)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
-
+                                                <select class="input-design4 company" style="margin-bottom: 3%;">
+                                                    <option></option>
+                                                    <option>x Company</option>
+                                                    <option>Y company</option>
+                                                    <option>Z company</option>
+                                                    <option>A Company</option>
+                                                    <option>b company</option>
+                                                    <option>Alacot® DS Eye Drops</option>
+                                                    <option>Carva®</option>
                                                 </select>
                                             </div>
 
-                                            <div class="col-sm-6">
-                                                <h5 class="modal-text">STORE NAME</h5>
-                                                <select class="input-design4" id="purchaseReqFor" name=""
-                                                    style="margin-bottom: 3%;">
-
-
-                                                    <option value="saab">Choose Company</option>
-                                                    <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
-                                                    <option value="fiat">BADAS Pharmacy (IGH savar)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Jurain)</option>
-                                                    <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
-
+                                            <div class="col-sm-6" id="inventoryProduct">
+                                                <h5 class="modal-text">COMPANY NAME</h5>
+                                                <select class="input-design4 company" style="margin-bottom: 3%;">
+                                                    <option></option>
+                                                    <option>x Company</option>
+                                                    <option>Y company</option>
+                                                    <option>Z company</option>
+                                                    <option>A Company</option>
+                                                    <option>b company</option>
+                                                    <option>Alacot® DS Eye Drops</option>
+                                                    <option>Carva®</option>
                                                 </select>
+
                                             </div>
 
 
@@ -645,16 +644,29 @@
                 })
 
 
-                //filter
 
-                $(document).on('click', '#filterGoodReceived', () => {
-                    $('#goodReceivedTable').show(1000)
-                    $('#filterBox').hide(1000)
-                })
+
+                //filter area product hide/show
+                $('#inventoryProduct').hide()
+                $("select.company").change(function () {
+                    var selectedCompany = $(this).children("option:selected").val();
+                    console.log(selectedCompany)
+                    if (selectedCompany !== '') {
+
+                        $('#inventoryProduct').show()
+                    }
+
+
+                });
+
+
+
 
 
 
                 //calender
+
+
 
                 $('#demo').daterangepicker({
                     "timePickerSeconds": true,
@@ -709,11 +721,36 @@
                     "alwaysShowCalendars": true,
                     "startDate": "07/20/2023",
                     "endDate": "07/26/2023"
-                }, function (start, end, label) {
-                    console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
                 });
+
+
                 //css
                 $('.daterangepicker ').css('background-color', 'black')
+
+
+
+                //filter
+
+                $(document).on('click', '#filterGoodReceived', () => {
+                  
+
+                    $('#demo').on('apply.daterangepicker', function (ev, picker) {
+                        if (picker.startDate.isSame(picker.endDate, 'day')) {
+                          
+                        } else {
+                            $('#goodReceivedTable').show(1000)
+                            $('#filterBox').hide(1000)
+                        }
+                    });
+
+
+
+                })
+
+                //single date stock   && csv show
+
+
+
 
 
             });
@@ -721,9 +758,7 @@
 
         </script>
 
-        <script>
 
-        </script>
 
 </body>
 
