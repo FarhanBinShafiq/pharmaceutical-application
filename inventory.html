@@ -732,20 +732,35 @@
                 //filter
 
                 $(document).on('click', '#filterGoodReceived', () => {
-                  
 
-                    $('#demo').on('apply.daterangepicker', function (ev, picker) {
-                        if (picker.startDate.isSame(picker.endDate, 'day')) {
-                          
-                        } else {
-                            $('#goodReceivedTable').show(1000)
-                            $('#filterBox').hide(1000)
-                        }
-                    });
+                    $('#goodReceivedTable').show(1000)
+                    $('#filterBox').hide(1000)
+                    var val = $('#demo').val();
+                    alert(val);
+                    var y = $('#demo').daterangepicker({
+                        "singleDatePicker": true,
+                    }).val();
+                    console.log(y)
+
+                    if(y ===  y){
+                        alert('Stock')
+                    }else{
+                        alert('CSV')
+                    }
 
 
 
                 })
+
+
+                // $('#demo').on('apply.daterangepicker', function (ev, picker) {
+                //     if (picker.startDate.isSame(picker.endDate, 'day')) {
+                //         alert('stck')
+                //     } else {
+                //         alert('csv')
+                //     }
+                // });
+
 
                 //single date stock   && csv show
 
