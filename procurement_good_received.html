@@ -214,6 +214,10 @@
                                         <th scope="col">SL</th>
                                         <th scope="col">ITEM</th>
                                         <th scope="col">QTY</th>
+                                        <th scope="col">TP (per unit)</th>
+                                        <th scope="col">Total Trade Price</th>
+                                        <th scope="col">Total VAT</th>
+                                        <th scope="col">Total Price</th>
 
                                     </tr>
                                 </thead>
@@ -222,87 +226,46 @@
 
                                     
 
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
+                                    <div>
+                                        <tr class="ccc">
+                                            <th scope="row">1001</th>
+                                            <td id='item'>NAPA</td>
+                                            <td>
+                                                <p><span id="qty">30</span> pcs</p>
+    
+                                            </td>
+                                            <th scope="row"><input type="number" value="10" id="trade"></th>
+                                            <td ><span id="totalTrade"></span></td>
+                                            <th scope="row"><input value="17" id="vat" type="number"></th>
+                                            <td id='item'><span id="totalPrice"></span></td>
+                                        </tr>
+    
+                                    </div>
+                                  
+                                    <div>
+                                        <tr class="ccc">
+                                            <th scope="row">1001</th>
+                                            <td id='item'>NAPA</td>
+                                            <td>
+                                                <p><span id="qty">40</span> pcs</p>
+    
+                                            </td>
+                                            <th scope="row"><input type="number" value="10" id="trade"></th>
+                                            <td ><span id="totalTrade"></span></td>
+                                            <th scope="row"><input value="17" id="vat" type="number"></th>
+                                            <td id='item'><span id="totalPrice"></span></td>
+                                        </tr>
+    
+                                    </div>
+                                 
 
-                                        </td>
-                                    </tr>
+                                    
 
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
+                                    
 
-                                        </td>
-                                    </tr>
-                                      
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
+ 
 
-                                        </td>
-                                    </tr>
-                                
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr class="ccc">
-                                        <th scope="row">1001</th>
-                                        <td id='item'>NAPA</td>
-                                        <td>
-                                            <p><span>30</span> pcs</p>
-
-                                        </td>
-                                    </tr>
+ 
                                 </tbody>
                             </table>
 
@@ -811,7 +774,7 @@
                 });
 
                 //hide
-                $('#viewSummary').hide()
+                $('#viewSummary').show()
 
                 $('#goodReceivedTable').hide()
 
@@ -907,6 +870,21 @@
         </script>
 
         <script>
+            //details page functionality
+            $(document).ready(() =>{
+                const quantity=parseInt($('#qty').text())
+                const trade=$('#trade').val()
+                const tPrice=quantity*trade;
+                console.log(tPrice)
+                $('#totalTrade').text(tPrice);
+                const vat=$('#vat').val()
+                console.log(vat)
+                const totalPrice=tPrice+parseInt(vat)
+                console.log(totalPrice)
+                $('#totalPrice').text(totalPrice);
+
+
+            })
 
         </script>
 
