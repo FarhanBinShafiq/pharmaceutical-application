@@ -224,53 +224,69 @@
 
                                 <tbody id="addTable">
 
+
+
+                                    <tr class="ccc">
+                                        <th>1001</th>
+                                        <td class='item'>NAPA</td>
+                                        <td>
+                                            <p><span class="qty">40</span> pcs</p>
+                                        </td>
+                                        <th ><input type="number" value="10" class="trade"></th>
+                                        <td><span class="totalTrade"></span></td>
+                                        <th ><input value="17" class="vat" type="number"></th>
+                                        <td class='item'><span class="totalPrice"></span></td>
+                                    </tr>
+
+                                    <tr class="ccc">
+                                        <th>1001</th>
+                                        <td class='item'>NAPA</td>
+                                        <td>
+                                            <p><span class="qty">30</span> pcs</p>
+                                        </td>
+                                        <th><input type="number" value="10" class="trade"></th>
+                                        <td><span class="totalTrade"></span></td>
+                                        <th><input value="17" class="vat" type="number"></th>
+                                        <td class='item'><span class="totalPrice"></span></td>
+                                    </tr>
                                     
+                                    <tr class="ccc">
+                                        <th>1001</th>
+                                        <td class='item'>NAPA</td>
+                                        <td>
+                                            <p><span class="qty">800</span> pcs</p>
+                                        </td>
+                                        <th ><input type="number" value="10" class="trade"></th>
+                                        <td><span class="totalTrade"></span></td>
+                                        <th ><input value="17" class="vat" type="number"></th>
+                                        <td class='item'><span class="totalPrice"></span></td>
+                                    </tr>
 
-                                    <div>
-                                        <tr class="ccc">
-                                            <th scope="row">1001</th>
-                                            <td id='item'>NAPA</td>
-                                            <td>
-                                                <p><span id="qty">30</span> pcs</p>
-    
-                                            </td>
-                                            <th scope="row"><input type="number" value="10" id="trade"></th>
-                                            <td ><span id="totalTrade"></span></td>
-                                            <th scope="row"><input value="17" id="vat" type="number"></th>
-                                            <td id='item'><span id="totalPrice"></span></td>
-                                        </tr>
-    
-                                    </div>
-                                  
-                                    <div>
-                                        <tr class="ccc">
-                                            <th scope="row">1001</th>
-                                            <td id='item'>NAPA</td>
-                                            <td>
-                                                <p><span id="qty">40</span> pcs</p>
-    
-                                            </td>
-                                            <th scope="row"><input type="number" value="10" id="trade"></th>
-                                            <td ><span id="totalTrade"></span></td>
-                                            <th scope="row"><input value="17" id="vat" type="number"></th>
-                                            <td id='item'><span id="totalPrice"></span></td>
-                                        </tr>
-    
-                                    </div>
-                                 
+                                    <tr class="ccc">
+                                        <th>1001</th>
+                                        <td class='item'>NAPA</td>
+                                        <td>
+                                            <p><span class="qty">520</span> pcs</p>
+                                        </td>
+                                        <th><input type="number" value="10" class="trade"></th>
+                                        <td><span class="totalTrade"></span></td>
+                                        <th><input value="17" class="vat" type="number"></th>
+                                        <td class='item'><span class="totalPrice"></span></td>
+                                    </tr>
 
-                                    
 
-                                    
 
- 
 
- 
+
+
+
+
+
                                 </tbody>
                             </table>
 
 
-                           
+
 
                         </form>
                     </div>
@@ -774,7 +790,7 @@
                 });
 
                 //hide
-                $('#viewSummary').show()
+                $('#viewSummary').hide()
 
                 $('#goodReceivedTable').hide()
 
@@ -871,18 +887,19 @@
 
         <script>
             //details page functionality
-            $(document).ready(() =>{
-                const quantity=parseInt($('#qty').text())
-                const trade=$('#trade').val()
-                const tPrice=quantity*trade;
-                console.log(tPrice)
-                $('#totalTrade').text(tPrice);
-                const vat=$('#vat').val()
-                console.log(vat)
-                const totalPrice=tPrice+parseInt(vat)
-                console.log(totalPrice)
-                $('#totalPrice').text(totalPrice);
+            $(document).ready(() => {
 
+                $('.ccc').each(function () {
+                    const $row = $(this);
+                    const quantity = parseInt($row.find('.qty').text());
+                    const trade = parseFloat($row.find('.trade').val());
+                    const tPrice = quantity * trade;
+                    $row.find('.totalTrade').text(tPrice);
+
+                    const vat = parseInt($row.find('.vat').val());
+                    const totalPrice = tPrice + vat;
+                    $row.find('.totalPrice').text(totalPrice);
+                });
 
             })
 
