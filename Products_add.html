@@ -211,7 +211,7 @@
                                             <div class="col-sm-6">
                                                 <h5 class="modal-text">COMPANY</h5>
                                                 <input class="input-design2" id="" name="">
-                                                <h5 class="morebtn">Add Manufacturer</h5>
+                                                
                                             </div>
 
                                             <div class="col-sm-6">
@@ -275,6 +275,8 @@
 
                 <br>
 
+                
+
                 <!--Products tab-->
 
                 <div class="procure_order-tab" style="background-color: #003E6C;"> <br>
@@ -292,38 +294,166 @@
                         </div>
                     </div>
 
-                    <table class="table">
-                        <thead style="background-color: #003E6C; font-size: small;">
-                            <tr>
-                                <th scope="col">SL</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">NAME</th>
-                                <th scope="col">PRICE</th>
-                                <th scope="col">COMPANY</th>
-                                <th scope="col">FORM</th>
-                                <th scope="col">GROUP</th>
-                                <th scope="col">SUBGROUP</th>
-                                <th scope="col">GENERIC</th>
-                            </tr>
-                        </thead>
+                     <!--filter -->
+              <div>
+                <div id="filterBox">
+                   
 
-                        <tbody style="background-color: #154883">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>161853</td>
-                                <td>Tab Celofen 100mg
-                                    Aceclofenac
-                                    N/A , Medicine
-                                    ACI Limited</td>
-                                <td>0.00</td>
-                                <td>ACI Limited</td>
-                                <td>Tablet</td>
-                                <td>Medicine</td>
-                                <td>N/A</td>
-                                <td>Aceclofenac</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="modal-body">
+                        <form action="">
+
+                            <div class="container margin padding w100">
+
+
+                                <div class="row">
+
+
+                                    <div class="col-sm-6">
+                                        <h5 class="modal-text">ITEM</h5>
+                                        <select class="input-design4" id="purchaseReqFor" name="">
+
+                                            </option>
+                                            <option value="saab">Choose items</option>
+                                            <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
+                                            <option value="fiat">BADAS Pharmacy (IGH savar)</option>
+                                            <option value="fiat">BADAS Pharmacy (Jurain)</option>
+                                            <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
+                                        </select>
+                                      
+                                    </div>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+
+                                    <div class="col-sm-6">
+                                        <h5 class="modal-text">GENERIC NAME</h5>
+
+                                        <input class="input-design2" type="text" id="demo"  
+                                            value="">
+
+
+                                    </div>
+
+                                    <br>
+
+                                    <div class="row">
+
+                                        <div class="col-sm-6">
+                                            <h5 class="modal-text">COMPANY NAME</h5>
+                                            <select class="input-design4" id="purchaseReqFor" name="">
+
+                                                </option>
+                                                <option value="saab">Choose Company</option>
+                                                <option value="fiat">BADAS Pharmacy (Keraniganj)</option>
+                                                <option value="fiat">BADAS Pharmacy (IGH savar)</option>
+                                                <option value="fiat">BADAS Pharmacy (Jurain)</option>
+                                                <option value="fiat">BADAS Pharmacy (Mohammadpur)</option>
+                                            </select>
+                                             
+                                        </div>
+
+
+                                    </div>
+
+                                    <br>
+
+                                </div>
+                        </form>
+                    </div>
+
+                    <br/>
+                    <br/>
+                    
+
+                    <div class="modal-footer">
+
+                        <button type="button" id="filterGoodReceived" class="btn btn-primary"
+                            style="background-color: #7dc855;">APPLY
+                            FILTER</button>
+                    </div>
+                </div>
+              </div>
+                  
+               <!--PURCHASE tab-->
+
+               <div class="procure_purchase-tab" id="goodReceivedTable" style="background-color: #200303;"> <br>
+
+                
+
+                <table class="table">
+                    <thead style="background-color: #003E6C; font-size: small;">
+                        <tr>
+
+                            <th scope="col">SL</th>
+                            <th scope="col">PRODUCT ID</th>
+                            <th scope="col">PRODCUT NAME</th>
+                            <th scope="col">GENERIC</th>
+                            <th scope="col">TP</th>
+                            <th scope="col">MRP</th>
+                            <th scope="col">PRODUCT TYPE</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody style="background-color: #154883" id="purchaseTable">
+                        <tr>
+
+                            <th scope="col">1002</th>
+                            <th scope="col">BAADAS PHARMACY</th>
+                            <th scope="col">1001</th>
+                            <th scope="col">1002</th>
+                            <th scope="col">1003</th>
+                            <th scope="col"> 1051000</th>
+                            <th scope="col">INJ</th>
+                        </tr>
+
+                        <tr>
+
+                            <th scope="col">1002</th>
+                            <th scope="col">BAADAS PHARMACY</th>
+                            <th scope="col">1001</th>
+                            <th scope="col">1002</th>
+                            <th scope="col">1003</th>
+                            <th scope="col"> 1051000</th>
+                            <th scope="col">INJ</th>
+                        </tr>
+
+                        <tr>
+
+                            <th scope="col">1002</th>
+                            <th scope="col">BAADAS PHARMACY</th>
+                            <th scope="col">1001</th>
+                            <th scope="col">1002</th>
+                            <th scope="col">1003</th>
+                            <th scope="col"> 1051000</th>
+                            <th scope="col">INJ</th>
+                        </tr>
+
+                        <tr>
+
+                            <th scope="col">1002</th>
+                            <th scope="col">BAADAS PHARMACY</th>
+                            <th scope="col">1001</th>
+                            <th scope="col">1002</th>
+                            <th scope="col">1003</th>
+                            <th scope="col"> 1051000</th>
+                            <th scope="col">INJ</th>
+                        </tr>
+
+                        <tr>
+
+                            <th scope="col">1002</th>
+                            <th scope="col">BAADAS PHARMACY</th>
+                            <th scope="col">1001</th>
+                            <th scope="col">1002</th>
+                            <th scope="col">1003</th>
+                            <th scope="col"> 1051000</th>
+                            <th scope="col">INJ</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                   
                 </div>
             </div>
         </div>
@@ -341,6 +471,16 @@
                 $(this).next('.sub-menu').slideToggle();
                 $(this).find('.dropdown').toggleClass('rotate');
             });
+
+             //filter
+
+             $('#goodReceivedTable').hide()
+
+             $(document).on('click', '#filterGoodReceived', () => {
+                    $('#goodReceivedTable').show(1000)
+                    $('#filterBox').hide(1000)
+                })
+
         });
     </script>
 
